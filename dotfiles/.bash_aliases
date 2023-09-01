@@ -38,13 +38,12 @@ alias ..='cd ..'
 alias ...='cd .. && cd ..'
 alias cd..='cd ..'
 alias cd~='cd ~'
-# ls aliases
-alias lh='ls -lh'
 # terminal QoL
 alias cls='clear'
 alias shush='shutdown -P 0'
 alias cx='chmod +x'
 # human readable commands
+alias lh='ls -lh'
 alias df='df -h'
 # MOOO
 alias moo='cowsay MOOOO'
