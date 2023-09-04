@@ -64,3 +64,6 @@ if ! shopt -oq posix; then
 		. /etc/bash_completion
 	fi
 fi
+
+# addin $HOME/bin to $PATH
+PATH="$HOME/bin:$PATH"
