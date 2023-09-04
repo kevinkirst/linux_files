@@ -70,5 +70,7 @@ if [ ! -d "$HOME/bin" ]; then
 	mkdir "$HOME/bin"
 fi
 
-# addin $HOME/bin to $PATH
-PATH="$HOME/bin:$PATH"
+# adding $HOME/bin to $PATH if it hasn't been added yet
+if [[ $(cut -d '/' -f 2 <<< $PATH) != "home" ]]; then
+	PATH="$HOME/bin:$PATH"
+fi
