@@ -65,5 +65,10 @@ if ! shopt -oq posix; then
 	fi
 fi
 
+# creating $HOME/bin if it doesn't exist
+if [ ! -d "$HOME/bin" ]; then
+	mkdir "$HOME/bin"
+fi
+
 # addin $HOME/bin to $PATH
 PATH="$HOME/bin:$PATH"
